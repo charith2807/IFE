@@ -1,0 +1,30 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply w-full h-full font-sans box-border m-0 p-0;
+  font-size: 12px;
+  line-height: 1;
+}
+
+#root,
+#__next {
+  @apply flex flex-col min-h-screen;
+}
+
+body {
+  @apply bg-gray-100 flex flex-col min-h-screen;
+}
+
+main {
+  @apply flex-1;
+}
+
+footer {
+  @apply flex-shrink-0 bg-white text-black p-4 text-center;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
